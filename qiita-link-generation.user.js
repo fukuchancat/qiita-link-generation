@@ -11,8 +11,9 @@ span.classList.add("fa", "fa-link");
 
 const div = document.createElement("div");
 div.classList.add("it-Actions_shareButton");
+div.style.marginTop = "16px";
 div.append(span);
-div.addEventListener("click", () => prompt("", `[${document.title}](${location.href})`));
+div.addEventListener("click", () => prompt(document.title, `[${document.title}](${location.href})`));
 
 const container = document.querySelector(".it-Actions");
 container.append(div);
